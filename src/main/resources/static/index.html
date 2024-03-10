@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DriveDepot Website">
+    <meta name="keywords" content="DriveDepot, cars, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DriveDepot</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="shortcut icon" href="img/wheel.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo_image.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+  
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+      
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo_image.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#feature">Features</a></li>
+                                <li><a href="#deals">Featured Cars</a></li>
+                              
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#buyCar">Buy a Car</a></li>
+                            </ul>
+                        </nav>
+                  
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero spad set-bg" data-setbg="img/hero-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="hero__text">
+                        <div class="hero__text__title">
+                            <span style="font-size: x-large;">Where your dream ride meets unbeatable deals</span>
+                            <h2 style="font-size: large;">Discover a world of options that match your unique needs, turning your car-buying journey into a thrilling adventure.</h2>
+                        </div>
+                        <a href="#deals" class="primary-btn"><img src="img/wheel.png" alt=""> Featured Deals </a>
+                        <a href="#about" class="primary-btn more-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero__tab">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <div class="hero__tab__form" id="buyCar">
+                                    <h2>Find Your Dream Car</h2>
+                                    <form id="carDealsForm">
+                                        <div class="select-list">
+                                            <div class="select-list-item">
+                                                <p>Select Location</p>
+                                                <select id="location" required>
+                                                    <option data-display=" ">Select Location</option>
+                                                    <option value="Alberta">Alberta</option>
+                                                    <!-- <option value="British Columbia">British Columbia</option> -->
+                                                    <option value="Manitoba">Manitoba</option>
+                                                    <option value="New Brunswick">New Brunswick</option>
+                                                    <!-- <option value="Newfoundland and Labrador">Newfoundland and Labrador</option> -->
+                                                    <option value="Nova Scotia">Nova Scotia</option>
+                                                    <option value="Ontario">Ontario</option>
+                                                    <option value="Prince Edward Island">Prince Edward Island</option>
+                                                    <option value="Quebec">Quebec</option>
+                                                    <option value="Saskatchewan">Saskatchewan</option>
+                                                </select>
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Select Make</p>
+                                                <select id="brand" required>
+                                                    <option data-display=" ">Select Make</option>
+                                                    <!-- Car Brands -->
+                                                    <option value="Jeep">Jeep</option>
+                                                    <option value="Ford">Ford</option>
+                                                    <option value="Chevrolet">Chevrolet</option>
+                                                    <option value="Ram">Ram</option>
+                                                    <option value="Mitsubishi">Mitsubishi</option>
+                                                    <option value="Nissan">Nissan</option>
+                                                    <option value="Kia">Kia</option>
+                                                    <option value="Dodge">Dodge</option>
+                                                    <option value="Cadillac">Cadillac</option>
+                                                    <option value="Chrysler">Chrysler</option>
+                                                    <option value="Toyota">Toyota</option>
+                                                    <option value="Volkswagen">Volkswagen</option>
+                                                    <option value="Bmw">BMW</option>
+                                                    <option value="Honda">Honda</option>
+                                                    <option value="Mercedes">Mercedes</option>
+                                                    <option value="Porsche">Porsche</option>
+                                                    <option value="Land">Land Rover</option>
+                                                    <option value="Hyundai">Hyundai</option>
+                                                    <option value="Buick">Buick</option>
+                                                    <option value="Mazda">Mazda</option>
+                                                    <option value="Mini">MINI</option>
+                                                    <option value="Subaru">Subaru</option>
+                                                    <option value="Gmc">GMC</option>
+                                                    <option value="Acura">Acura</option>
+                                                    <option value="Infiniti">Infiniti</option>
+                                                    <option value="Lincoln">Lincoln</option>
+                                                    <option value="Audi">Audi</option>
+                                                    <option value="Tesla">Tesla</option>
+                                                    <option value="Lexus">Lexus</option>
+                                                    <option value="Volvo">Volvo</option>
+                                                    <option value="Alfa">Alfa Romeo</option>
+                                                    <option value="Aston">Aston Martin</option>
+                                                    <option value="Hino">Hino</option>
+                                                    <option value="Genesis">Genesis</option>
+                                                </select>
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Select Type</p>
+                                                <select id="type" required>
+                                                    <option data-display=" ">Select Type</option>
+                                                    <option value="New">New</option>
+                                                    <option value="Used">Used </option>
+                                                    <!-- <option value="">Both</option> -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="car-price">
+                                            <p>Price Range:</p>
+                                            <div class="price-range-wrap">
+                                                <div class="price-range"></div>
+                                                <div class="range-slider">
+                                                    <div class="price-input">
+                                                        <input type="text" id="amount">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="site-btn">Get Deals</button>
+                                    </form>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container" id="feature">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our Services</span>
+                        <h2>What We Offer</h2>
+                        <p>Discover a world of options that match your unique needs, turning your car-buying journey into a thrilling adventure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+        
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="img/services/services-2.png" alt="">
+                        <h5>Buying A Car</h5>
+                        <p>Whether you crave speed, style, or practicality, DriveDepot doesn't just find cars – it crafts an experience just for you.</p>
+                        <a href="#buyCar"><i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="img/services/services-3.png" alt="">
+                        <h5>Get the Hottest Deals</h5>
+                        <p>Analyzing your preferences to deliver a tailored selection of the hottest wheels in town.</p>
+                        <a href="#deals"><i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Feature Section Begin -->
+    <section class="feature spad">
+        <div class="container" id="about">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="feature__text">
+                        <div class="section-title">
+                            <span>DriveDepot</span>
+                            <h2>We Are a Trusted Name In Auto</h2>
+                        </div>
+                        <div class="feature__text__desc">
+                            <p>Our cutting-edge car deals comparison platform utilises advanced web crawling and HTML parsing, to bring you the best car deals swiftly.</p>
+                            <p>DriveDepot leverages inverted indexing for quick searches. Features include page ranking, word completion, spell checking, finding patterns, search history and much more.</p>
+                            <P>Navigate effortlessly and find a perfect deal with our powerful feature-rich software.</P>
+                        </div>
+                        <div class="feature__text__btn">
+                            <a href="#moreInfo" class="primary-btn">About Us</a>
+                            <a href="#buyCar" class="primary-btn partner-btn">Search a Car</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src="img/feature/feature-1.png" alt="">
+                                </div>
+                                <h6>Engine</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src="img/feature/feature-2.png" alt="">
+                                </div>
+                                <h6>Turbo</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src="img/feature/feature-3.png" alt="">
+                                </div>
+                                <h6>Colling</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src="img/feature/feature-4.png" alt="">
+                                </div>
+                                <h6>Suspension</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src="img/feature/feature-5.png" alt="">
+                                </div>
+                                <h6>Electrical</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src="img/feature/feature-6.png" alt="">
+                                </div>
+                                <h6>Brakes</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section End -->
+
+    <!-- Car Section Begin -->
+    <section class="car spad">
+        <div class="container" id="deals">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title carDeals">
+                        <span>Deals</span>
+                        <h2>Featured Vehicle Deals</h2>
+                    </div>
+                    <ul class="filter__controls">
+                        <li class="active" data-filter="*">All Cars</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="row car-filter" id="carContainer">
+                <!-- Generated car cards will be appended here -->
+            </div>
+        </div>
+    </section>
+    <!-- Car Section End -->
+
+    <!-- Chooseus Section Begin -->
+    <section class="chooseus spad" id="moreInfo">
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="chooseus__text">
+                        <div class="section-title">
+                            <h2>Why People Choose Us</h2>
+                            <p> A compelling and efficient car-buying experience</p>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-check-circle"></i> Cutting-edge Technology.</li>
+                            <li><i class="fa fa-check-circle"></i> Innovative Search Features.
+                            </li>
+                            <li><i class="fa fa-check-circle"></i> Fastest Search Results.
+                            </li>
+                            <li><i class="fa fa-check-circle"></i> Customization for Unique Needs.</li>
+                            <li><i class="fa fa-check-circle"></i> Effortless Navigation & Comprehensive Information.</li>
+                        </ul>
+                        <a href="#buyCar" class="primary-btn">Find a Car</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chooseus__video set-bg">
+            <img src="img/chooseus-video.png" alt="">
+           
+        </div>
+    </section>
+    <!-- Chooseus Section End -->
+
+   
+    <!-- Latest Blog Section End -->
+
+    <!-- Cta Begin -->
+    <div class="cta" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="cta__item set-bg" data-setbg="img/cta/cta-1.jpg">
+                        <h4>Do You Want To Buy A Car?</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="cta__item set-bg" data-setbg="img/cta/cta-2.jpg">
+                        <h4>Do You Want To Get the Best Deals?</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cta End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container">
+   
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/logo_image.png" alt=""></a>
+                        </div>
+                        <p><i class="fa fa-university"></i> University of Windsor <i class="fa fa-location-arrow"></i> Windsor, ON</p>
+                        <div class="footer__social">
+                            <a href="https://www.linkedin.com/in/mohd-abdul-rahman/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/anuj-p-3023632a/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3">
+                   
+                </div>
+                <div class="col-lg-2 col-md-3">
+                  
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Top Brands</h5>
+                        <ul>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Abarth</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Acura</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Alfa Romeo</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Audi</li>
+                        </ul>
+                        <ul>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> BMW</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Chevrolet</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Ferrari</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Honda</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer__copyright__text">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>  All rights reserved </p>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cards.js"></script>
+   
+</body>
+
+</html>
