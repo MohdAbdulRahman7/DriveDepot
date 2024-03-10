@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Function to make the API call
     function fetchData() {
-        fetch('http://localhost:8080/inventory/allcars')
+        fetch('https://drivedepot.onrender.com/inventory/allcars')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Network response was not ok: ${response.status}`);
