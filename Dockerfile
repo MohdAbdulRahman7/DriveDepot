@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:18-ea-8-jdk-slim
-COPY --from=build /target/driver-depot-0.01-SNAPSHOT.jar driver-depot.jar
+COPY --from=build /target/driver-depot-0.0.1-SNAPSHOT.jar driver-depot.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","driver-depot.jar"]
