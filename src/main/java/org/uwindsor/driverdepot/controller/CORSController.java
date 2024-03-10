@@ -14,7 +14,7 @@ public class CORSController {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://127.0.0.1:8081") // Replace with your website's domain
+                        .allowedOrigins("https://drivedepot.onrender.com/") // Replace with your website's domain
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("Content-Type")
                         .allowCredentials(true);
