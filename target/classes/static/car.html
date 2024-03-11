@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DriveDepot Website">
+    <meta name="keywords" content="DriveDepot, cars, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DriveDepot</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 30%;
+    height: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+ <!-- Page Preloder -->
+ <div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Offcanvas Menu Begin -->
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+    <div class="offcanvas__logo">
+        <a href="./index.html"><img src="img/logo_image.png" alt=""></a>
+    </div>
+    <div id="mobile-menu-wrap"></div>
+
+</div>
+<!-- Offcanvas Menu End -->
+
+<!-- Header Section Begin -->
+<header class="header">
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="img/logo_image.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="header__nav">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="/index.html#feature">Features</a></li>
+                            <li><a href="/index.html#deals">Featured Cars</a></li>
+                          
+                            <li><a href="/index.html#about">About</a></li>
+                            <li><a href="/index.html#buyCar">Buy a Car</a></li>
+                        </ul>
+                    </nav>
+              
+                </div>
+            </div>
+        </div>
+        <div class="canvas__open">
+            <span class="fa fa-bars"></span>
+        </div>
+    </div>
+</header>
+<!-- Header Section End -->
+
+
+    <!-- Car Section Begin -->
+    <section class="car spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="car__sidebar">
+                        <div class="car__filter">
+                            <h5>Car Filter</h5>
+                            <form id="carDealsForm">
+                                <p>Select Location</p>
+                                <select id="location">
+                                    <option data-display=" ">Select Location</option>
+                                    <option value="Alberta">Alberta</option>
+                                    <!-- <option value="British Columbia">British Columbia</option> -->
+                                    <option value="Manitoba">Manitoba</option>
+                                    <option value="New Brunswick">New Brunswick</option>
+                                    <!-- <option value="Newfoundland and Labrador">Newfoundland and Labrador</option> -->
+                                    <option value="Nova Scotia">Nova Scotia</option>
+                                    <option value="Ontario">Ontario</option>
+                                    <option value="Prince Edward Island">Prince Edward Island</option>
+                                    <option value="Quebec">Quebec</option>
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                </select>
+                                <p>Select Make</p>
+                                <select id="brand">
+                                    <option data-display=" ">Select Make</option>
+                                    <!-- Car Brands -->
+                                    <option value="Jeep">Jeep</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Ram">Ram</option>
+                                    <option value="Mitsubishi">Mitsubishi</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="Dodge">Dodge</option>
+                                    <option value="Cadillac">Cadillac</option>
+                                    <option value="Chrysler">Chrysler</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Volkswagen">Volkswagen</option>
+                                    <option value="Bmw">BMW</option>
+                                    <option value="Honda">Honda</option>
+                                    <option value="Mercedes">Mercedes</option>
+                                    <option value="Porsche">Porsche</option>
+                                    <option value="Land">Land Rover</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Buick">Buick</option>
+                                    <option value="Mazda">Mazda</option>
+                                    <option value="Mini">MINI</option>
+                                    <option value="Subaru">Subaru</option>
+                                    <option value="Gmc">GMC</option>
+                                    <option value="Acura">Acura</option>
+                                    <option value="Infiniti">Infiniti</option>
+                                    <option value="Lincoln">Lincoln</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Tesla">Tesla</option>
+                                    <option value="Lexus">Lexus</option>
+                                    <option value="Volvo">Volvo</option>
+                                    <option value="Alfa">Alfa Romeo</option>
+                                    <option value="Aston">Aston Martin</option>
+                                    <option value="Hino">Hino</option>
+                                    <option value="Genesis">Genesis</option>
+                                </select>
+                                <p>Select Type</p>
+                                <select id="type">
+                                    <option data-display=" ">Select Type</option>
+                                    <option value="New">New</option>
+                                    <option value="Used">Used </option>
+                                    <!-- <option value="">Both</option> -->
+                                </select>
+                           
+                                <div class="filter-price">
+                                    <p>Price:</p>
+                                    <div class="price-range-wrap">
+                                        <div class="filter-price-range"></div>
+                                        <div class="range-slider">
+                                            <div class="price-input">
+                                                <input type="text" id="filterAmount">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car__filter__btn">
+                                    <button type="submit" class="site-btn">Reset FIlter</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="car__filter__option">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6" style="background-color:#fefefe;">
+                                <span>Around <span id="totalCars"></span> results - <span id="timeTaken"></span> ms</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="car__filter__option__item car__filter__option__item--right">
+                                    <h6>Sort By</h6>
+                                    <select class="sortingS" id="sortCars">
+                                        <option value="Price: Highest First">Price: Highest First</option>
+                                        <option value="Price: Lowest First">Price: Lowest First</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carContainer" class="row"></div>
+                    <!-- Bootstrap Modal -->
+                    <div id="carModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div id="carDetails"></div>
+                        </div>
+                    </div>
+
+                  
+                    <div class="pagination__option" id="pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Car Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container">
+   
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/logo_image.png" alt=""></a>
+                        </div>
+                        <p><i class="fa fa-university"></i> University of Windsor <i class="fa fa-location-arrow"></i> Windsor, ON</p>
+                        <div class="footer__social">
+                            <a href="https://www.linkedin.com/in/mohd-abdul-rahman/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/anuj-p-3023632a/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3">
+                   
+                </div>
+                <div class="col-lg-2 col-md-3">
+                  
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Top Brands</h5>
+                        <ul>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Abarth</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Acura</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Alfa Romeo</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Audi</li>
+                        </ul>
+                        <ul>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> BMW</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Chevrolet</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Ferrari</li>
+                            <li style="color: white;"><i class="fa fa-angle-right"></i> Honda</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer__copyright__text">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>  All rights reserved </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/generateCarData.js"></script>
+    <script src="js/cards.js"></script>
+   
+</body>
+
+</html>
