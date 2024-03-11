@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Function to make the API call
     function fetchData() {
-        fetch('https://drivedepot.onrender.com/inventory/allcars')
+        fetch('http://localhost:8080/inventory/allcars')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Network response was not ok: ${response.status}`);
@@ -141,7 +141,7 @@ $(document).ready(function () {
         // Make a POST request
         $.ajax({
             type: "POST",
-            url: "https://drivedepot.onrender.com/api/cardeals",
+            url: "http://localhost:8080/api/cardeals",
             contentType: "application/json",
             data: JSON.stringify(postData),
             success: function (response) {
