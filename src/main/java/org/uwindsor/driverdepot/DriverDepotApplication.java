@@ -6,6 +6,9 @@ import java.util.Properties;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.server.ConfigurableWebServerFactory;
+import org.springframework.boot.web.server.WebServerFactoryCustomizer;
+import org.springframework.context.annotation.Bean;
 import org.uwindsor.mac.acc.drivedepot.constants.Constants;
 import org.uwindsor.mac.acc.drivedepot.htmlparser.impl.HTMLParser;
 import org.uwindsor.mac.acc.drivedepot.util.ConfigUtil;
@@ -28,4 +31,12 @@ public class DriverDepotApplication {
 		SpringApplication.run(DriverDepotApplication.class, args);
 	}
 
+	 @Bean
+    public WebServerFactoryCustomizer<ConfigurableWebServerFactory> webServerFactoryCustomizer() {
+        return factory -> {
+            // Get the port from the environment variable, defaulting to 8080 if not set
+            String port = System.getenv("PORT");
+            factory.setPort(port != null ? Integer.parseInt(port) : 8080);
+        };
+    }
 }
